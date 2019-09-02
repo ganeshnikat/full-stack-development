@@ -3,6 +3,7 @@ package com.google.keepnote.userservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 import com.google.keepnote.userservice.jwtfilter.JwtFilter;
@@ -13,6 +14,7 @@ import com.google.keepnote.userservice.jwtfilter.JwtFilter;
  */
 
 @SpringBootApplication
+@EnableEurekaClient
 public class UserServiceApplication {
 
 	/*
