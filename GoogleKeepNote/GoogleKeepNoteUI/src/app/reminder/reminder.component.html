@@ -1,0 +1,16 @@
+
+<app-mainnav></app-mainnav>
+<app-reminder-taker></app-reminder-taker>
+<div class="category-container">
+        <mat-card class="category-card" *ngFor="let reminder of reminder" (click)="openEditView(reminder)">
+                <mat-card-title>{{reminder.reminderName}}</mat-card-title>
+                <mat-card-content>{{reminder.reminderDescription}}</mat-card-content>
+              </mat-card> 
+</div>
+
+
+
+<router-outlet></router-outlet>
+
+
+<router-outlet name="remEditOutlet"></router-outlet> 

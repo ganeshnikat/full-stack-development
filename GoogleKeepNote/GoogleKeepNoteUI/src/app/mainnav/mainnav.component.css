@@ -1,0 +1,45 @@
+.sidenav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+.sidenav {
+  width: 6.5%;
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 20;
+}
+.textcenter {
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  text-align: left;
+}
+.mat-toolbar.mat-primary {
+  background: #fafafa !important;
+  color: #fff;
+}
+.sidenav[_ngcontent-c4] {
+  width: 10.5%;
+}
+.mat-button {
+  min-width: 100%;
+}
+.myBtn[_ngcontent-c4] {
+  min-width: 100%;
+  font-size: 17px;
+}
+mat-sidenav {
+  background-color: #fafafa !important;
+}

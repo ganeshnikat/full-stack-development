@@ -1,0 +1,29 @@
+<!-- Expansion panel to add new notes -->
+<div class="category-container">
+        
+    <mat-expansion-panel class="category-expansion-panel" style="margin-left: 20%;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Create Category
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="category-form">
+            <mat-form-field>
+                    <input matInput placeholder="Category ID *" name="Id" [(ngModel)]="cat.categoryId">
+            </mat-form-field>
+
+            <mat-form-field>
+                    <input matInput placeholder="Category Name *" name="categoryName" [(ngModel)]="cat.categoryName">
+            </mat-form-field>
+            
+            <mat-form-field>
+              <textarea matInput placeholder="Category Description *" name="desc" [(ngModel)]="cat.categoryDescription"></textarea> 
+            </mat-form-field>    
+        </div>
+        <button mat-button (click)="addCategory()" class="addCategory">Create Category</button>
+    </mat-expansion-panel>
+<!-- Label to display any error messages -->
+<label class="errorMessage">{{ errMessage }}</label>
+</div>
+

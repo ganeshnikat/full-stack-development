@@ -1,0 +1,37 @@
+<!-- Expansion panel to add new notes -->
+<div class="note-container">
+        
+    <mat-expansion-panel class="note-expansion-panel" style="margin-left: 20%;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Create Note
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="note-form">
+            <mat-form-field>
+             <input matInput placeholder="Note Title *" name="title" [(ngModel)]="note.noteTitle">
+            </mat-form-field>
+
+            <mat-form-field>
+              <textarea matInput placeholder="Note Content *" name="content" [(ngModel)]="note.noteContent"></textarea> 
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Note Status *" name="status" [(ngModel)]="note.noteStatus" readonly> 
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-select  matInput placeholder="Select Category *"  [(ngModel)]="note.category">
+                  <mat-option *ngFor="let category of categories" [value]="category">
+                    {{ category.categoryName }}
+                  </mat-option>
+                </mat-select>
+          </mat-form-field>
+        </div>
+        <button mat-button (click)="addNote()" class="addNoteButton">Create Note</button>
+    </mat-expansion-panel>
+    <!-- Label to display any error messages -->
+<label class="errorMessage" >{{ errMessage }}</label>
+</div>
+

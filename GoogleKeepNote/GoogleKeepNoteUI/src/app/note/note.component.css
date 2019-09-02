@@ -1,0 +1,9 @@
+.note-card
+{
+    margin-top:10px;
+    margin-left: 105px;
+    border-radius: 15px;
+   /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+}

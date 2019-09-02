@@ -1,0 +1,19 @@
+.category-card{
+    margin-top:10px;
+    margin-left: 105px;
+    border-radius: 15px;
+}
+.category-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 27em;
+    position: absolute;
+  }
+
+  mat-card.category-card.mat-card.ng-star-inserted {
+    margin-top:10px;
+    margin-left: 105px;
+    border-radius: 15px;
+}
